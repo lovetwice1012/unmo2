@@ -15,6 +15,7 @@ def main():
             'janome',
             'tqdm',
             'dill',
+            'discord.py'
         ],
         entry_points={
             'console_scripts': [
