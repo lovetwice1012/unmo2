@@ -1,5 +1,8 @@
 from .unmo import Unmo
+import discord
 
+TOKEN = 'NjYyMjIxNDkxMDMwNDU4Mzgx.XmjKUw.FsqveB__f4Aci16upHTvlxGLAdM'
+client = discord.Client()
 
 def _build_prompt(unmo):
     """AIインスタンスを取り、AIとResponderの名前を整形して返す"""
@@ -8,14 +11,16 @@ def _build_prompt(unmo):
 
 
 def main():
-    print('Unmo System prototype : proto')
-    proto = Unmo('proto')
-    while True:
-        text = input('> ')
+    @client.event
+    async def on_message(message):
+        # メッセージ送信者がBotだった場合は無視する
+        if message.author.bot:
+            return
+        proto = Unmo('proto')
+        text = message.content
         if not text:
-            break
-
+            message.reply("なぁに？")
+            return
         response = proto.dialogue(text)
-        print('{prompt}{response}'.format(prompt=_build_prompt(proto),
-                                          response=response))
-    proto.save()
+        message.reply(response)
+proto.save()
