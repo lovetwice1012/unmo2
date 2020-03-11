@@ -24,3 +24,4 @@ def main():
         response = proto.dialogue(text)
         message.reply(response)
         proto.save()
+    client.run(TOKEN)
