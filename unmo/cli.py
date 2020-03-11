@@ -23,4 +23,4 @@ def main():
             return
         response = proto.dialogue(text)
         message.reply(response)
-proto.save()
+        proto.save()
