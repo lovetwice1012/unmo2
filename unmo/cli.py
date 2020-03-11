@@ -1,7 +1,7 @@
 from .unmo import Unmo
 import discord
 
-TOKEN = 'NjYyMjIxNDkxMDMwNDU4Mzgx.XmjKUw.FsqveB__f4Aci16upHTvlxGLAdM'
+TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmjNMQ.OP36TmW4ZI5xZ71hpAKkqQQWZAs'
 client = discord.Client()
 
 def _build_prompt(unmo):
