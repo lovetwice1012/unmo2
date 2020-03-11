@@ -1,0 +1,10 @@
+/__pycache__/
+/dics/*
+/,/
+/.coverage
+/cover/
+/build/
+/dist/
+/unmo.egg-info/
+/unmo/__pycache__/
+/tests/__pycache__/
