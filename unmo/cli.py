@@ -1,8 +1,7 @@
 from .unmo import Unmo
 import discord
 
-TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmFew.jMkKOnePyBJ11whnFkR6ExyBOTI'
-client = discord.Client()
+
 
 def _build_prompt(unmo):
     """AIインスタンスを取り、AIとResponderの名前を整形して返す"""
@@ -11,6 +10,18 @@ def _build_prompt(unmo):
 
 
 def main():
+    TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmFew.jMkKOnePyBJ11whnFkR6ExyBOTI'
+    client = discord.Client()
+    @client.event
+    async def on_ready():
+        '''
+        起動時に呼ばれるメソッド
+        '''
+        print('-----Logged in info-----')
+        print(client.user.name)
+        print(client.user.id)
+        print('------------------------')
+
     @client.event
     async def on_message(message):
         # メッセージ送信者がBotだった場合は無視する
