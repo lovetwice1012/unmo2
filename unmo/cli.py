@@ -33,9 +33,9 @@ def main():
         proto = Unmo('proto')
         text = message.content
         if not text:
-            message.reply("なぁに？")
+            message.channel.send("{message.author.mention} なぁに？")
             return
         response = proto.dialogue(text)
-        message.reply(response)
+        message.channel.send('{message.author.mention} '+response)
         proto.save()
     client.run(TOKEN)
