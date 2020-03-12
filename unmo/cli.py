@@ -1,5 +1,7 @@
 from .unmo import Unmo
 import discord
+import os
+import traceback
 
 
 
