@@ -38,7 +38,7 @@ class Unmo:
         入力をDictionaryに学習させる。"""
         chance = randrange(0, 100)
         if chance in range(0, 29):
-            self._responder = self._responders['pattern']
+            self._responder = self._responders['markov']
         elif chance in range(30, 49):
             self._responder = self._responders['markov']
         elif chance in range(50, 69):
