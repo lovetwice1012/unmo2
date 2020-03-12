@@ -38,5 +38,5 @@ def main():
                 return
             response = proto.dialogue(text)
             await message.channel.send(f'{message.author.mention} '+response)
-       　　　proto.save()
+            proto.save()
     client.run(TOKEN)
