@@ -28,8 +28,8 @@ def main():
     @client.event
     async def on_message(message):
         # メッセージ送信者がBotだった場合は無視する
-        #if message.author.bot:
-            #return
+        if message.author.bot:
+            return
         #if client.user in message.mentions:
         proto = Unmo('proto')
         text = message.content
