@@ -30,12 +30,13 @@ def main():
         # メッセージ送信者がBotだった場合は無視する
         if message.author.bot:
             return
-        proto = Unmo('proto')
-        text = message.content
-        if not text:
-            message.channel.send("{message.author.mention} なぁに？")
-            return
-        response = proto.dialogue(text)
-        await message.channel.send('{message.author.mention} '+response)
-        proto.save()
+        if client.user in message.mentions:
+            proto = Unmo('proto')
+            text = message.content
+    　　　　    if not text:
+     　　　　       message.channel.send(f'{message.author.mention} なぁに？')
+    　　　　        return
+   　　　　     response = proto.dialogue(text)
+ 　　　　       await message.channel.send(f'{message.author.mention} '+response)
+       　　　proto.save()
     client.run(TOKEN)
