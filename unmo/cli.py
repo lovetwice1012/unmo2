@@ -10,7 +10,7 @@ def _build_prompt(unmo):
 
 
 def main():
-    TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmKMw.-opUmhaFNAawuyexUeYlBg_WrJk'
+    TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmSsA.tFFRniqNWesQlaQIyAAxBc2bFLo'
     print(TOKEN)
     client = discord.Client()
     @client.event
