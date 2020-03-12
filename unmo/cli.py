@@ -32,7 +32,7 @@ def main():
             return
         proto = Unmo('proto')
         text = message.content
-        if ot text:
+        if not text:
             message.channel.send("{message.author.mention} なぁに？")
             return
         response = proto.dialogue(text)
