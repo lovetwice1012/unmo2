@@ -1,7 +1,7 @@
 from .unmo import Unmo
 import discord
 
-TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmjQKQ.d2kd8QbSjRKwJzfCCxBU1jcDFAs'
+TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmFew.jMkKOnePyBJ11whnFkR6ExyBOTI'
 client = discord.Client()
 
 def _build_prompt(unmo):
@@ -24,4 +24,4 @@ def main():
         response = proto.dialogue(text)
         message.reply(response)
         proto.save()
-    client.run("Njg3MjYyNTE2MzA4MzQ0ODM0.XmjQKQ.d2kd8QbSjRKwJzfCCxBU1jcDFAs")
+    client.run("Njg3MjYyNTE2MzA4MzQ0ODM0.XmmFew.jMkKOnePyBJ11whnFkR6ExyBOTI")
