@@ -33,7 +33,7 @@ def main():
         if client.user in message.mentions:
             proto = Unmo('proto')
             text = message.content
-    　　　　    if not text:
+            if not text:
      　　　　       message.channel.send(f'{message.author.mention} なぁに？')
     　　　　        return
    　　　　     response = proto.dialogue(text)
