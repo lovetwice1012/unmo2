@@ -32,10 +32,10 @@ def main():
             return
         proto = Unmo('proto')
         text = message.content
-        if not text:
+        if ot text:
             message.channel.send("{message.author.mention} なぁに？")
             return
         response = proto.dialogue(text)
-        message.channel.send('{message.author.mention} '+response)
+        await message.channel.send('{message.author.mention} '+response)
         proto.save()
     client.run(TOKEN)
