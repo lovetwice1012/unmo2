@@ -38,15 +38,15 @@ class Unmo:
         入力をDictionaryに学習させる。"""
         chance = randrange(0, 100)
         if chance in range(0, 29):
-            self._responder = self._responders['pattern']
+            self._responder = self._responders['markov']
         elif chance in range(30, 49):
-            self._responder = self._responders['template']
+            self._responder = self._responders['markov']
         elif chance in range(50, 69):
             self._responder = self._responders['markov']
         elif chance in range(70, 89):
             self._responder = self._responders['markov']
         else:
-            self._responder = self._responders['what']
+            self._responder = self._responders['markov']
 
         parts = analyze(text)
         response = self._responder.response(text, parts)
