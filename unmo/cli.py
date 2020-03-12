@@ -10,7 +10,8 @@ def _build_prompt(unmo):
 
 
 def main():
-    TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmFew.jMkKOnePyBJ11whnFkR6ExyBOTI'
+    TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmKMw.-opUmhaFNAawuyexUeYlBg_WrJk'
+    print(TOKEN)
     client = discord.Client()
     @client.event
     async def on_ready():
@@ -35,4 +36,4 @@ def main():
         response = proto.dialogue(text)
         message.reply(response)
         proto.save()
-    client.run("Njg3MjYyNTE2MzA4MzQ0ODM0.XmmFew.jMkKOnePyBJ11whnFkR6ExyBOTI")
+    client.run(TOKEN)
