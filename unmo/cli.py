@@ -10,7 +10,7 @@ def _build_prompt(unmo):
 
 
 def main():
-    TOKEN = 'Njg3MjYyNTE2MzA4MzQ0ODM0.XmmZ2w.wEJLBCnCigvDmFVJqtr10z7EV9E'
+    TOKEN = os.environ['DISCORD_BOT_TOKEN']
     print(TOKEN)
     client = discord.Client()
     @client.event
