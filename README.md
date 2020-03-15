@@ -15,6 +15,7 @@
     git clone https://github.com/lovetwice1012/unmo2.git
     cd unmo2/
     python setup.py install
+    export DISCORD_BOT_TOKEN=<discordのbotのトークン>
 
 ## 起動
 
