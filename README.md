@@ -1,8 +1,8 @@
-# 人口無脳 Unmo
+# 人口無脳 Unmo　discord bot ver.
 
 `Unmo`はPythonで書かれたチャットボットです。形態素解析・マルコフ連鎖などに基づいたアルゴリズムにより、ユーザーの入力を学習・成長していきます。人口無脳とも呼ばれます。
 
-もともとはRuby向けの書籍「[恋するプログラム][book]」で解説されているチャットボットであり、このリポジトリは勉強を兼ねてPythonに移植したものです。
+もともとはRuby向けの書籍「[恋するプログラム][book]」で解説されているチャットボットであり、このリポジトリは勉強を兼ねてPythonに移植したものをdiscordで使えるようにしました。
 
 ## 必要なもの
 
@@ -12,13 +12,13 @@
 
 `git`による`clone`か、またはパッケージを[ダウンロード][releases]して展開してください。その後`setup.py`を実行します。
 
-    git clone https://github.com/sandmark/unmo.git
-    cd unmo/
+    git clone https://github.com/lovetwice1012/unmo2.git
+    cd unmo2/
     python setup.py install
 
 ## 起動
 
-`python -m unmo`とタイプすることで、コマンドラインインターフェイスのダイアログが表示されます。まずは「こんにちは」など話しかけてみてください。終了するには何も入力せずに`Enter`キーを叩いてください。
+`python -m unmo`とタイプすることで、ディスコードのボットがオンラインになります。まずは「こんにちは」など話しかけてみてください。
 
 はじめはユーザーの発言を繰り返すだけですが、学習して辞書が充実してくると自分で文章を考え始めます。辛抱強く話しかけてあげてください。
 
@@ -35,6 +35,6 @@
   - 辞書が保存できない場合があるバグを修正しました。
   - テストコードをリファクタリングしました。
 
-[releases]: https://github.com/sandmark/unmo/releases
+[releases]: https://github.com/lovetwice1012/unmo2/releases
 [book]: http://amzn.to/2kYltNz
 [python3]: https://www.python.org/downloads/
